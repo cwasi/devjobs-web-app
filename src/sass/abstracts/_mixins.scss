@@ -1,0 +1,14 @@
+// body typography
+@mixin body-typography {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: $default-text-size;
+  font-weight: 400;
+  line-height: $default-line-height;
+  @include text-color($color: $color-very-dark-blue);
+  background-color: $color-body-bgc;
+}
+
+// text color
+@mixin text-color($color) {
+  color: $color;
+}

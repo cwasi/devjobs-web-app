@@ -1,0 +1,13 @@
+// text colors
+
+.text-color-violet {
+  @include text-color($color: $color-violet);
+}
+
+.text-color-dark-gray {
+  @include text-color($color: $color-dark-gray);
+}
+
+.text-color-placeholder {
+  @include text-color($color: $color-very-dark-blue);
+}

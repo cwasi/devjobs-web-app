@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.heading {
+  font-weight: 700; }
+  .heading-1 {
+    font-size: 1.75rem;
+    line-height: 2.13rem; }
+  .heading-2 {
+    font-size: 1.5rem;
+    line-height: 1.81rem; }
+  .heading-3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem; }
+  .heading-4 {
+    font-size: 0.86rem;
+    line-height: 1rem; }
+
+.paragraph {
+  color: #6e8098; }
+
+.font-w-bold {
+  font-weight: 700; }
+
+.text-color-violet {
+  color: #5964e0; }
+
+.text-color-dark-gray {
+  color: #6e8098; }
+
+.text-color-placeholder {
+  color: #19202d; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%; }
+
+html {
+  font-size: 100%; }
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: #19202d;
+  background-color: #f2f2f2; }
+
+main {
+  min-height: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center; }
+
+.btn {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 0.31rem;
+  transition: all 250ms;
+  cursor: pointer; }
+  .btn__primary-default {
+    color: #ffffff;
+    background-color: #5964e0; }
+    .btn__primary-default:hover {
+      background-color: #939bf4; }
+  .btn__secondary-default {
+    color: #5964e0;
+    background-color: #eeeffc; }
+    .btn__secondary-default:hover {
+      background-color: #c5c9f4; }
