@@ -1,0 +1,23 @@
+{
+  "name": "devjobs-web-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass src/sass/main.scss src/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwasi/devjobs-web-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwasi/devjobs-web-app/issues"
+  },
+  "homepage": "https://github.com/cwasi/devjobs-web-app#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
