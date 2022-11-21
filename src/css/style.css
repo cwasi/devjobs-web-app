@@ -78,3 +78,71 @@ main {
     background-color: #eeeffc; }
     .btn__secondary-default:hover {
       background-color: #c5c9f4; }
+
+.logo-box {
+  width: 7.188rem;
+  height: 2rem; }
+
+.logo_icon {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.switch {
+  width: 7rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.toggle {
+  display: inline-block;
+  cursor: pointer; }
+  .toggle__input {
+    display: none; }
+  .toggle__fill {
+    position: relative;
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 0.75rem;
+    transition: all 0.02s;
+    background: #ffffff;
+    display: flex;
+    align-items: center; }
+  .toggle__fill:after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    height: 0.875rem;
+    width: 0.875rem;
+    background-color: #5964e0;
+    border-radius: 0.75rem;
+    transition: transform 0.2s; }
+  .toggle__input:checked ~ .toggle__fill::after {
+    transform: translateX(1.2rem); }
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+  .icon__sun-box {
+    width: 1.25rem;
+    height: 1.16rem; }
+  .icon__moon-box {
+    width: 0.75rem; }
+
+.header {
+  height: 10.13rem;
+  background-image: url(../../../src/assets/desktop/bg-pattern-header.svg);
+  background-repeat: no-repeat;
+  background-position: 0rem center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .header-box {
+    margin-top: -2rem;
+    width: 69.38rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }

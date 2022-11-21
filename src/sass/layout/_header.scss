@@ -1,0 +1,20 @@
+.header {
+  height: 10.13rem;
+
+  background-image: url(../../../src/assets/desktop/bg-pattern-header.svg);
+  background-repeat: no-repeat;
+  background-position: 0rem center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &-box {
+    margin-top: -2rem;
+    width: 69.38rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
