@@ -6,10 +6,24 @@
   &__sun-box {
     width: 1.25rem;
     height: 1.16rem;
-}
+  }
 
-&__moon-box {
+  &__moon-box {
     width: 0.75rem;
     // height: 0.75rem;
+  }
+
+  &__company-box {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 0.94rem;
+    background-color: #e99210;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: -1.5rem;
   }
 }
