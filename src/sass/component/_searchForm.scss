@@ -1,0 +1,49 @@
+.search__form {
+  padding: 0 1rem;
+  background-color: $color-white;
+
+  height: 5rem;
+  border-radius: 0.36rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  position: relative;
+  top: -2.5rem;
+
+  &-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-group:first-child {
+    width: 27.56rem;
+  }
+
+  &-group:nth-child(3) {
+    width: 14.49rem;
+  }
+
+  &-group:last-child {
+    width: 18.563rem;
+  }
+  &__input {
+    margin-left: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-family: inherit;
+    color: $color-very-dark-blue;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+
+    &::placeholder {
+      color: $color-dark-gray;
+    }
+  }
+  &__btn {
+    width: 7.69rem;
+  }
+}

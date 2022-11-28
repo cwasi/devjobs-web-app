@@ -3,6 +3,10 @@
   height: 100%;
   object-fit: none;
 
+  &-i {
+    object-fit: contain;
+  }
+
   &__sun-box {
     width: 1.25rem;
     height: 1.16rem;
@@ -25,5 +29,15 @@
 
     position: relative;
     top: -1.5rem;
+  }
+
+  &__location-box {
+    width: 1.1rem;
+    height: 1.5rem;
+  }
+
+  &__search-box {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
