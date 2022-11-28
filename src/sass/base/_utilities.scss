@@ -11,3 +11,12 @@
 .text-color-placeholder {
   @include text-color($color: $color-very-dark-blue);
 }
+
+// margin
+.m-top-a {
+  margin-top: auto;
+}
+
+.m-top--75 {
+  margin-top: 0.4rem;
+}

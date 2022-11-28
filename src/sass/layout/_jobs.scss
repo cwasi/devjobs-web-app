@@ -1,0 +1,20 @@
+.jobs {
+  width: 69.375rem;
+  //   height: 70.75rem;
+
+
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 4.1rem 1.875rem;
+  }
+
+  &__button-box {
+    margin-top: 3.5rem;
+    align-self: center;
+    width: 8.813rem;
+  }
+}
