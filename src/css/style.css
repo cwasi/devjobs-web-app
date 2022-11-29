@@ -35,6 +35,18 @@
 .m-top--75 {
   margin-top: 0.4rem; }
 
+.m-top-2-5 {
+  margin-top: 2.5rem; }
+
+.m-top-1-75 {
+  margin-top: 1.75rem; }
+
+.m-top-1-44 {
+  margin-top: 1.44rem; }
+
+.m-top-0--5 {
+  margin-top: 0.5rem; }
+
 *,
 *::before,
 *::after {
@@ -57,12 +69,14 @@ body {
   color: #19202d;
   background-color: #f2f2f2; }
 
-main {
+.main {
   min-height: 100%;
   display: grid;
-  align-content: center;
-  justify-content: center;
-  gap: 4.06rem; }
+  justify-content: center; }
+  .main__home {
+    gap: 4.06rem; }
+  .main__detail {
+    gap: 2rem; }
 
 .btn {
   width: 100%;
@@ -253,6 +267,32 @@ input[type="checkbox"] {
   input[type="checkbox"]:checked + .check-icon {
     display: block; }
 
+.list {
+  list-style-type: none; }
+  .list__item {
+    display: flex; }
+    .list__item:not(:last-child) {
+      margin-bottom: 0.5rem; }
+  .list__item__text {
+    width: 100%;
+    margin-left: 1.56rem;
+    list-style-type: circle; }
+  .list__unordered .list__item::before {
+    margin-top: 0.6rem;
+    content: "";
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50rem;
+    background-color: #5964e0; }
+  .list__ordered {
+    counter-reset: numbers; }
+  .list__ordered .list__item::before {
+    content: counter(numbers);
+    counter-increment: numbers;
+    font-weight: 700;
+    line-height: 1.6rem;
+    color: #5964e0; }
+
 .header {
   height: 10.13rem;
   background-image: url(../../../src/assets/desktop/bg-pattern-header.svg);
@@ -281,3 +321,41 @@ input[type="checkbox"] {
     margin-top: 3.5rem;
     align-self: center;
     width: 8.813rem; }
+
+.title {
+  margin-top: -2.5rem;
+  width: 45.63rem;
+  height: 8.75rem;
+  padding-right: 2.688rem;
+  border-radius: 0.38rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center; }
+  .title__logo-box {
+    padding: 1.86rem;
+    width: 8.75rem;
+    height: 8.75rem;
+    border-radius: 0 0.38rem 0.38rem 0.38rem;
+    background-color: #e99210;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .title__body {
+    margin-left: 2.5rem; }
+  .title__link {
+    margin-top: 0.813rem; }
+  .title__btn-box {
+    width: 9.188rem;
+    margin-left: auto; }
+
+.detail {
+  width: 45.63rem;
+  padding: 3rem;
+  border-radius: 0.38rem;
+  background-color: #ffffff; }
+  .detail__title__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .detail__btn-box {
+    width: 8.82rem; }

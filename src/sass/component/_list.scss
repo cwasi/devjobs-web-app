@@ -1,0 +1,40 @@
+.list {
+  list-style-type: none;
+
+  &__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__item__text {
+    width: 100%;
+    margin-left: 1.56rem;
+    list-style-type: circle;
+  }
+
+
+  &__unordered .list__item::before {
+    margin-top: 0.6rem;
+    content: "";
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50rem;
+    background-color: $color-violet;
+  }
+
+  &__ordered {
+    counter-reset: numbers;
+  }
+  &__ordered .list__item::before {
+    content: counter(numbers);
+    counter-increment: numbers;
+    font-weight: 700;
+    line-height: $default-line-height;
+    color: $color-violet;
+  }
+}
+
+

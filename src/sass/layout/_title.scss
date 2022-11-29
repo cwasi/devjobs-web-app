@@ -1,0 +1,36 @@
+.title {
+  margin-top: -2.5rem;
+  width: 45.63rem;
+  height: 8.75rem;
+  padding-right: 2.688rem;
+  border-radius: 0.38rem;
+  background-color: $color-white;
+
+  display: flex;
+  align-items: center;
+
+  &__logo-box {
+    padding: 1.86rem;
+    width: 8.75rem;
+    height: 8.75rem;
+    border-radius: 0 0.38rem 0.38rem 0.38rem;
+    background-color: #e99210;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__body {
+    margin-left: 2.5rem;
+  }
+
+  &__link {
+    margin-top: 0.813rem;
+  }
+
+  &__btn-box {
+    width: 9.188rem;
+    margin-left: auto;
+  }
+}
