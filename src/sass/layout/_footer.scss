@@ -1,0 +1,18 @@
+.footer {
+  margin-top: 5rem;
+  background-color: $color-white;
+  display: flex;
+  justify-content: center;
+  &-box {
+    padding: 1.44rem;
+    width: 45.63rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn-box {
+    width: 8.82rem;
+  }
+}
