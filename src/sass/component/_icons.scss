@@ -23,9 +23,7 @@
     border-radius: 0.94rem;
     background-color: #e99210;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
 
     position: relative;
     top: -1.5rem;

@@ -1,0 +1,18 @@
+.footer {
+  margin-top: 5rem;
+  height: 6rem;
+  background-color: $color-white;
+
+  @include flex-center;
+
+  &-box {
+    padding: 0 1.44rem;
+    width: 45.63rem;
+
+    @include flex-center-space-between;
+  }
+
+  &__btn-box {
+    width: 8.82rem;
+  }
+}

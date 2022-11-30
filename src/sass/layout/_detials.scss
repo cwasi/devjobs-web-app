@@ -1,0 +1,14 @@
+.detail {
+  width: 45.63rem;
+  padding: 3rem;
+  border-radius: 0.38rem;
+  background-color: $color-white;
+
+  &__title__container {
+    @include flex-center-space-between;
+  }
+  
+  &__btn-box {
+    width: 8.82rem;
+  }
+}

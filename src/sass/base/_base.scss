@@ -21,11 +21,18 @@ body {
   @include body-typography;
 }
 
-main {
+.main {
   min-height: 100%;
 
   display: grid;
-  align-content: center;
+  // align-content: center;
   justify-content: center;
-  gap: 4.06rem;
+
+  &__home {
+    gap: 4.06rem;
+  }
+  
+  &__detail {
+    gap: 2rem;
+  }
 }
