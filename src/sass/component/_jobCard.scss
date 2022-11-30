@@ -12,9 +12,8 @@
 
   &__time-box {
     width: 9.19rem;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    
+    @include flex-end-space-between;
   }
 
   &__body {

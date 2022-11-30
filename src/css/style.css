@@ -190,7 +190,7 @@ body {
   .job-card__time-box {
     width: 9.19rem;
     display: flex;
-    align-items: flex-end;
+    align-items: end;
     justify-content: space-between; }
   .job-card__body {
     width: 17.875rem;
@@ -310,9 +310,12 @@ input[type="checkbox"] {
     justify-content: space-between; }
 
 .jobs {
+  margin-bottom: 6.5rem;
   width: 69.375rem;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
   .jobs__container {
     display: grid;
     grid-template-columns: repeat(3, max-content);
@@ -362,11 +365,13 @@ input[type="checkbox"] {
 
 .footer {
   margin-top: 5rem;
+  height: 6rem;
   background-color: #ffffff;
   display: flex;
+  align-items: center;
   justify-content: center; }
   .footer-box {
-    padding: 1.44rem;
+    padding: 0 1.44rem;
     width: 45.63rem;
     display: flex;
     align-items: center;

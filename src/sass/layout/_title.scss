@@ -16,9 +16,7 @@
     border-radius: 0 0.38rem 0.38rem 0.38rem;
     background-color: #e99210;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center
   }
 
   &__body {
