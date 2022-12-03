@@ -28,7 +28,7 @@
             <img
               src="src/assets/desktop/icon-sun.svg"
               alt="sun icon"
-              class="icon"
+              class="icon-i"
             />
           </div>
           <label class="toggle" for="theme-toggle">
@@ -39,13 +39,13 @@
             <img
               src="src/assets/desktop/icon-moon.svg"
               alt="moon icon"
-              class="icon"
+              class="icon-i"
             />
           </div>
         </div>
       </div>
     </header>
-    <main class=" main main__home">
+    <main class="main main__home">
       <form action="#" class="search__form">
         <div class="search__form-group">
           <div class="icon__search-box">
@@ -55,12 +55,18 @@
               class="icon icon-i"
             />
           </div>
+
           <input
             type="text"
             name="companies"
             placeholder="Filter by titles, companies expertise..."
             class="search__form__input"
           />
+          <div class="icon__filter-box">
+            <svg class="icon icon-i icon-dark-gray">
+              <use xlink:href="src/assets/sprite.svg#icon-filter"></use>
+            </svg>
+          </div>
         </div>
         <div class="vertical-line"></div>
         <div class="search__form-group">
@@ -92,8 +98,13 @@
             Full time only</label
           >
           <div class="search__form__btn">
-            <button class="btn btn__primary-default" type="submit">
+            <button class="btn btn__primary-default btn-b" type="submit">
               Search
+            </button>
+            <button class="btn btn-m btn__primary-default btn-s" type="submit">
+              <svg class="icon__search-box-s icon icon-i icon-white">
+                <use href="src/assets/sprite.svg#icon-search"></use>
+              </svg>
             </button>
           </div>
         </div>

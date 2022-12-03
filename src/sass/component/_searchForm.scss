@@ -5,25 +5,69 @@
   height: 5rem;
   border-radius: 0.36rem;
 
-  @include flex-center-end;
+  @include flex-center-space-between;
+  margin-top: -2.5rem;
+  justify-self: center;
 
-  position: relative;
-  top: -2.5rem;
+  // position: relative;
+  // top: -2.5rem;
+  // left: 50%;
+  // transform: translate(-50%, 0%);
+
+  @media only screen and (max-width: 73.75em) {
+    width: $overAll-width;
+  }
+
+  @media only screen and (max-width: 58.75em) {
+    width: $overAll-Width-t;
+  }
+  @media only screen and (max-width: 40.875em) {
+    width: $overAll-Width-s;
+  }
 
   &-group {
     @include flex-center-space-between;
+    width: 100%;
   }
 
   &-group:first-child {
     width: 27.56rem;
+
+    @media only screen and (max-width: 40.875em) {
+      & input {
+        margin-left: 0;
+      }
+    }
   }
 
   &-group:nth-child(3) {
     width: 14.49rem;
+    @media only screen and (max-width: 40.875em) {
+      display: none;
+    }
   }
 
   &-group:last-child {
     width: 18.563rem;
+
+    @media only screen and (max-width: 40.875em) {
+      flex-shrink: 3;
+      display: flex;
+      justify-content: end;
+
+      & label,
+      & .check--box {
+        display: none;
+      }
+    }
+  }
+
+  &-group:first-child,
+  &-group:nth-child(3),
+  &-group:last-child {
+    @media only screen and (max-width: 73.75em) {
+      width: 100%;
+    }
   }
   &__input {
     margin-left: 1rem;
@@ -42,5 +86,26 @@
   }
   &__btn {
     width: 7.69rem;
+    @media only screen and (max-width: 73.75em) {
+      width: 5rem;
+    }
+    @media only screen and (max-width: 40.875em) {
+      width: auto;
+      @include flex-center; 
+    }
+  }
+
+  &__btn .btn-b {
+    @media only screen and (max-width: 40.875em) {
+      display: none;
+    }
+  }
+  &__btn .btn-s {
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+    @media only screen and (min-width: 40.875em) {
+      display: none;
+    }
   }
 }

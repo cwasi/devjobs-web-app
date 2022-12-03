@@ -44,5 +44,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+}
+
+@mixin flex-d-column-stretch-space-between {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
 }

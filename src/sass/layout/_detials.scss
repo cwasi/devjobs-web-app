@@ -4,11 +4,25 @@
   border-radius: 0.38rem;
   background-color: $color-white;
 
+  @media only screen and (max-width: 40.875em) {
+    padding: 1.44rem;
+    width: 100%;
+    justify-self: center;
+  }
+
   &__title__container {
     @include flex-center-space-between;
+
+    @media only screen and (max-width: 40.875em) {
+      @include flex-d-column-stretch-space-between;
+    }
   }
-  
+
   &__btn-box {
     width: 8.82rem;
+    @media only screen and (max-width: 40.875em) {
+      margin-top: 3.125rem;
+      width: 100%;
+    }
   }
 }
