@@ -12,7 +12,16 @@
     @include flex-center-space-between;
   }
 
+  &__text-box {
+    @media only screen and (max-width: 40.875em) {
+      display: none;
+    }
+  }
+
   &__btn-box {
     width: 8.82rem;
+    @media only screen and (max-width: 40.875em) {
+      width: 100%;
+    }
   }
 }

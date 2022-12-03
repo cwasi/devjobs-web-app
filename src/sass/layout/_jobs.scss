@@ -4,11 +4,24 @@
   //   height: 70.75rem;
 
   @include flex-d-column-center;
+  @media only screen and (max-width: 73.75em) {
+    width: 100%;
+  }
 
   &__container {
     display: grid;
     grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+
     gap: 4.1rem 1.875rem;
+
+    @media only screen and (max-width: 73.75em) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 40.875em) {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
   }
 
   &__button-box {

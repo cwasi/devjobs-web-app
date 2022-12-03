@@ -7,6 +7,14 @@
     object-fit: contain;
   }
 
+  &-dark-gray {
+    fill: $color-dark-gray;
+  }
+
+  &-white {
+    fill: $color-white;
+  }
+
   &__sun-box {
     width: 1.25rem;
     height: 1.16rem;
@@ -17,6 +25,20 @@
     // height: 0.75rem;
   }
 
+  &__filter-box {
+    margin-left: 1rem;
+    width: 1.248rem;
+    height: 1.25rem;
+    @media only screen and (min-width: 40.875em) {
+      display: none;
+    }
+  }
+
+  &__search-box-s {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
   &__company-box {
     width: 3.125rem;
     height: 3.125rem;
@@ -37,5 +59,8 @@
   &__search-box {
     width: 1.5rem;
     height: 1.5rem;
+    @media only screen and (max-width: 41.38em) {
+      display: none;
+    }
   }
 }

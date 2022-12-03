@@ -5,14 +5,33 @@
   background-repeat: no-repeat;
   background-position: 0rem center;
   background-size: cover;
-
+  
   display: flex;
   align-items: center;
   justify-content: space-around;
+  
+  @media only screen and (max-width: 41.38em) {
+
+    background-image: url(../../../src/assets/desktop/bg-pattern-detail-footer.svg);
+  }
+
   &-box {
     margin-top: -2rem;
     width: 69.38rem;
 
     @include flex-center-space-between;
+
+    @media only screen and (max-width: 73.75em) {
+      width: $overAll-width;
+      
+      // margin: 0 6rem;
+    }
+    @media only screen and (max-width: 58.75em) {
+      width: $overAll-Width-t;
+    }
+    @media only screen and (max-width: 41.38em) {
+      width: $overAll-Width-s;
+    }
+
   }
 }
