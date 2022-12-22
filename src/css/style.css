@@ -413,16 +413,16 @@ input[type="checkbox"] {
     .jobs {
       width: 100%; } }
   .jobs__container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, max-content);
-    justify-content: center;
+    justify-content: start;
     gap: 4.1rem 1.875rem; }
     @media only screen and (max-width: 73.75em) {
       .jobs__container {
         grid-template-columns: repeat(2, 1fr); } }
     @media only screen and (max-width: 40.875em) {
       .jobs__container {
-        width: 100%;
         grid-template-columns: 1fr; } }
   .jobs__button-box {
     margin-top: 3.5rem;
