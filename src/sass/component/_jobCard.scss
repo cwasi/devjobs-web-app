@@ -2,7 +2,9 @@
   width: 21.88rem;
   height: 14.25rem;
   padding-left: 2rem;
+  text-decoration: none;
   border-radius: 0.38rem;
+  @include text-color($color: $color-very-dark-blue);
   background-color: $color-white;
   transition: all 0.4s ease-in-out;
   &:hover {

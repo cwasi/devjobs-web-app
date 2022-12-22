@@ -60,7 +60,7 @@
             type="text"
             name="companies"
             placeholder="Filter by titles, companies expertise..."
-            class="search__form__input"
+            class="search__form__input search__input"
           />
           <div class="icon__filter-box">
             <svg class="icon icon-i icon-dark-gray">
@@ -81,13 +81,13 @@
             type="text"
             name="location"
             placeholder="Filter by location..."
-            class="search__form__input"
+            class="search__form__input filter-by-location"
           />
         </div>
         <div class="vertical-line"></div>
         <div class="search__form-group">
           <div class="check--box">
-            <input type="checkbox" name="full-time-only" id="full-time-only" />
+            <input type="checkbox" name="full-time-only" class="check-box" id="full-time-only" />
             <img
               src="src/assets/desktop/icon-check.svg"
               alt="check icon"
@@ -98,7 +98,7 @@
             Full time only</label
           >
           <div class="search__form__btn">
-            <button class="btn btn__primary-default btn-b" type="submit">
+            <button class="btn btn__primary-default btn-b search-btn" type="submit">
               Search
             </button>
             <button class="btn btn-m btn__primary-default btn-s" type="submit">
@@ -112,7 +112,7 @@
 
       <div class="jobs">
         <div class="jobs__container">
-          <div class="job-card">
+          <!-- <div class="job-card">
             <div class="icon__company-box">
               <img
                 src="src/assets/logos/scoot.svg"
@@ -423,12 +423,14 @@
                 United Kingdom
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="jobs__button-box">
           <button class="btn btn__primary-default">Load more</button>
         </div>
       </div>
     </main>
+    <script type="module" src="src/js/index.js"></script>
+    <script type="module" src="src/js/themeSwitcher.js"></script>
   </body>
 </html>

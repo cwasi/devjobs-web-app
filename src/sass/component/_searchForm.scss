@@ -78,12 +78,14 @@
     border-radius: 2px;
     border: none;
     outline: none;
+    background-color:transparent;
     transition: all 0.3s;
 
     &::placeholder {
       color: $color-dark-gray;
     }
   }
+  
   &__btn {
     width: 7.69rem;
     @media only screen and (max-width: 73.75em) {
