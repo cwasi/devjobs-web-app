@@ -290,6 +290,7 @@ body {
     border-radius: 2px;
     border: none;
     outline: none;
+    background-color: transparent;
     transition: all 0.3s; }
     .search__form__input::placeholder {
       color: #6e8098; }
@@ -531,3 +532,34 @@ input[type="checkbox"] {
     @media only screen and (max-width: 40.875em) {
       .footer__btn-box {
         width: 100%; } }
+
+.dark-mode {
+  background-color: #121721;
+  transition: all 300ms ease-in-out; }
+  .dark-mode .search__form,
+  .dark-mode .detail,
+  .dark-mode .title,
+  .dark-mode .footer,
+  .dark-mode .job-card {
+    background-color: #19202d;
+    transition: all 300ms ease-in-out; }
+  .dark-mode .check-box {
+    background-color: rgba(255, 255, 255, 0.205); }
+  .dark-mode h1,
+  .dark-mode h2,
+  .dark-mode h3,
+  .dark-mode h4 {
+    color: #ffffff;
+    transition: all 300ms ease-in-out; }
+  .dark-mode p {
+    color: #9daec2;
+    transition: all 300ms ease-in-out; }
+  .dark-mode label {
+    color: #ffffff;
+    transition: all 300ms ease-in-out; }
+  .dark-mode .vertical-line {
+    background-color: #6e8098;
+    transition: all 300ms ease-in-out; }
+  .dark-mode .search__form__input {
+    color: #ffffff;
+    transition: all 300ms ease-in-out; }
