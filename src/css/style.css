@@ -211,7 +211,9 @@ body {
   width: 21.88rem;
   height: 14.25rem;
   padding-left: 2rem;
+  text-decoration: none;
   border-radius: 0.38rem;
+  color: #19202d;
   background-color: #ffffff;
   transition: all 0.4s ease-in-out; }
   .job-card:hover {
