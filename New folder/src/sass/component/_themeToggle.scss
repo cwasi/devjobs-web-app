@@ -1,0 +1,43 @@
+.switch {
+  width: 7rem;
+  height: 1.5rem;
+
+  @include flex-center-space-between;
+}
+
+.toggle {
+  display: inline-block;
+  cursor: pointer;
+
+  &__input {
+    display: none;
+  }
+
+  &__fill {
+    position: relative;
+
+    width: $toggle-width;
+    height: $toggle-height;
+    border-radius: $toggel-border-radius;
+    transition: all 0.02s;
+    background: $color-white;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__fill:after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    height: 0.875rem;
+    width: 0.875rem;
+    background-color: $color-violet;
+    border-radius: ($toggel-border-radius);
+    transition: transform 0.2s;
+  }
+
+  &__input:checked ~ &__fill::after {
+    transform: translateX(1.2rem);
+  }
+}

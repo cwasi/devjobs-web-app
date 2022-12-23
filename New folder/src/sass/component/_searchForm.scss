@@ -66,7 +66,7 @@
   &-group:nth-child(3),
   &-group:last-child {
     @media only screen and (max-width: 73.75em) {
-      // width: 100%;
+      width: 100%;
     }
   }
   &__input {
@@ -78,14 +78,14 @@
     border-radius: 2px;
     border: none;
     outline: none;
-    background-color: transparent;
+    background-color:transparent;
     transition: all 0.3s;
 
     &::placeholder {
       color: $color-dark-gray;
     }
   }
-
+  
   &__btn {
     width: 7.69rem;
     @media only screen and (max-width: 73.75em) {
@@ -93,7 +93,7 @@
     }
     @media only screen and (max-width: 40.875em) {
       width: auto;
-      @include flex-center;
+      @include flex-center; 
     }
   }
 

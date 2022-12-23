@@ -1,0 +1,12 @@
+.logo {
+  &-box {
+    width: 7.188rem;
+    height: 2rem;
+  }
+
+  &_icon {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

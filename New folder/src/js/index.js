@@ -2,15 +2,12 @@
 
 import JSONData from "../data/data.json" assert { type: "json" };
 
-const modal = document.querySelector(".modal");
-const overlay = document.querySelector(".overlay");
 const jobsContainer = document.querySelector(".jobs__container");
 const locationInput = document.querySelector(".filter-by-location");
 const searchBtn = document.querySelector(".search-btn");
 const checkBox = document.querySelector(".check-box");
 const searchInput = document.querySelector(".search__input");
 const searchBtnSm = document.querySelector(".btn-s");
-const btnFilter = document.querySelector(".btn-filter");
 let checkboxState;
 
 const filteredBySearch = function (jobs, searchInput) {
@@ -84,17 +81,6 @@ const displayJobs = function (jobs, searchInput, locationInput) {
 
 displayJobs(JSONData, searchInput.value, locationInput.value);
 
-const openModal = function (e) {
-  e.preventDefault(e);
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-};
-
-const closeModal = function () {
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
-};
-
 ///////////////////////////////////////////////////////////////////
 
 if (searchBtn) {
@@ -114,10 +100,6 @@ if (searchBtnSm) {
   });
 }
 
-if (btnFilter) {
-  btnFilter.addEventListener("click", openModal);
-}
-
 jobsContainer.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -130,14 +112,3 @@ jobsContainer.addEventListener("click", (e) => {
   localStorage.setItem("position", `${jobPosition}`);
   window.location.href = "./src/pages/detail.html";
 });
-
-///////////////////////////////////////
-// Modal window
-
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-    closeModal();
-  }
-});
-
-overlay.addEventListener("click", closeModal);

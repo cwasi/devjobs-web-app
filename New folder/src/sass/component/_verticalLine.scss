@@ -1,0 +1,10 @@
+.vertical-line {
+  margin: 0 1.44rem;
+  width: 0.063rem;
+  height: 100%;
+  border: none;
+  background-color: $color-very-very-light-violect;
+  @media only screen and (max-width: 41.38em) {
+    display: none;
+  }
+}

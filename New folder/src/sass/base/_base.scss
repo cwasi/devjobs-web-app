@@ -27,14 +27,13 @@ html {
 }
 
 body {
-  position: relative;
   @include body-typography;
 }
 
 .main {
   min-height: 100%;
   display: grid;
-  align-content: start;
+  // align-content: center;
   justify-content: center;
   @media only screen and (max-width: 40.875em) {
     margin: 0 1rem;

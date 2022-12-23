@@ -62,12 +62,10 @@
             placeholder="Filter by titles, companies expertise..."
             class="search__form__input search__input"
           />
-          <div class="">
-            <button class="btn btn-m btn-icon btn-s btn-filter" type="submit">
-              <svg class="icon icon-i icon-dark-gray icon__filter-box">
-                <use xlink:href="src/assets/sprite.svg#icon-filter"></use>
-              </svg>
-            </button>
+          <div class="icon__filter-box">
+            <svg class="icon icon-i icon-dark-gray">
+              <use xlink:href="src/assets/sprite.svg#icon-filter"></use>
+            </svg>
           </div>
         </div>
         <div class="vertical-line"></div>
@@ -89,12 +87,7 @@
         <div class="vertical-line"></div>
         <div class="search__form-group">
           <div class="check--box">
-            <input
-              type="checkbox"
-              name="full-time-only"
-              class="check-box"
-              id="full-time-only"
-            />
+            <input type="checkbox" name="full-time-only" class="check-box" id="full-time-only" />
             <img
               src="src/assets/desktop/icon-check.svg"
               alt="check icon"
@@ -105,10 +98,7 @@
             Full time only</label
           >
           <div class="search__form__btn">
-            <button
-              class="btn btn__primary-default btn-b search-btn"
-              type="submit"
-            >
+            <button class="btn btn__primary-default btn-b search-btn" type="submit">
               Search
             </button>
             <button class="btn btn-m btn__primary-default btn-s" type="submit">
@@ -439,57 +429,7 @@
           <button class="btn btn__primary-default">Load more</button>
         </div>
       </div>
-      <div class="modal hidden">
-        <div class="modal__form">
-          <div class="modal__form__group">
-            <div class="icon__location-box">
-              <img
-                src="src/assets/desktop/icon-location.svg"
-                alt="Location icon"
-                class="icon icon-i"
-              />
-            </div>
-            <input
-              type="text"
-              name="location"
-              placeholder="Filter by location..."
-              class="modal__search__form__input filter-by-location"
-            />
-          </div>
-
-          <div class="modal__form__group">
-            <div class="check--box">
-              <input
-                type="checkbox"
-                name="full-time-only"
-                class="check-box"
-                id="full-time-only"
-              />
-              <img
-                src="src/assets/desktop/icon-check.svg"
-                alt="check icon"
-                class="check-icon"
-              />
-            </div>
-            <label
-              for="full-time-only"
-              class="font-w-bold text-color-dark-gray m-left-1"
-            >
-              Full time only</label
-            >
-          </div>
-          <div class="modal__search__form__btn">
-            <button
-              class="btn btn__primary-default btn-b search-btn"
-              type="submit"
-            >
-              Search
-            </button>
-          </div>
-        </div>
-      </div>
     </main>
-    <div class="overlay hidden"></div>
     <script type="module" src="src/js/index.js"></script>
     <script type="module" src="src/js/themeSwitcher.js"></script>
   </body>
