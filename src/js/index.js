@@ -6,10 +6,15 @@ const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const jobsContainer = document.querySelector(".jobs__container");
 const locationInput = document.querySelector(".filter-by-location");
+const modalLocationInput = document.querySelector(".modal__filter-by-location");
 const searchBtn = document.querySelector(".search-btn");
 const checkBox = document.querySelector(".check-box");
+const modalCheckBox = document.querySelector(".modal__check-box");
 const searchInput = document.querySelector(".search__input");
-const searchBtnSm = document.querySelector(".btn-s");
+const modalSearchBtn = document.querySelector(".modal__search-btn");
+const searchBtnSm = document
+  .querySelector(".search__form")
+  .lastElementChild.querySelector(".btn-s");
 const btnFilter = document.querySelector(".btn-filter");
 let checkboxState;
 
@@ -37,21 +42,27 @@ const filteredByLocation = function (jobs, input) {
 const displayJobs = function (jobs, searchInput, locationInput) {
   jobsContainer.innerHTML = "";
 
-  let n = filteredBySearch(jobs, searchInput);
+  let filtered;
+
+  if (searchBtn) {
+    filtered = filteredBySearch(jobs, searchInput);
+  }
 
   if (locationInput) {
-    n = locationInput ? filteredByLocation(n, locationInput) : jobs;
+    filtered = locationInput
+      ? filteredByLocation(filtered, locationInput)
+      : jobs;
   }
 
   if (checkboxState) {
-    n = n.filter((item) => {
+    filtered = filtered.filter((item) => {
       if (item.contract.toLowerCase() === "Full Time".toLowerCase()) {
         return item;
       }
     });
   }
 
-  n.forEach((job) => {
+  filtered.forEach((job) => {
     const html = `<a href="#" class="job-card job-card-${job.id}">
         <div class="icon__company-box" style="background-color:${job.logoBackground}">
           <img
@@ -106,13 +117,17 @@ if (searchBtn) {
   });
 }
 if (searchBtnSm) {
-  searchBtn.addEventListener("click", (e) => {
+  searchBtnSm.addEventListener("click", (e) => {
     e.preventDefault();
-
     checkboxState = checkBox.checked ? true : "";
     displayJobs(JSONData, searchInput.value, locationInput.value);
   });
 }
+
+modalSearchBtn.addEventListener("click", (e) => {
+  checkboxState = modalCheckBox.checked ? true : "";
+  displayJobs(JSONData, searchInput.value, modalLocationInput.value);
+});
 
 if (btnFilter) {
   btnFilter.addEventListener("click", openModal);
