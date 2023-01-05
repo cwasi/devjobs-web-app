@@ -31,4 +31,12 @@
     height: 3rem;
     background-color: transparent;
   }
+
+  &-filter-all {
+    padding: 0.5rem;
+    border: none;
+    color: rgb(95, 95, 231);
+    background-color: transparent;
+    cursor: pointer;
+  }
 }

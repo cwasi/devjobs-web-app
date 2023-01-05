@@ -48,3 +48,11 @@
   visibility: hidden;
   opacity: 0;
 }
+
+.d-n {
+  display: none !important;
+}
+
+.flex-space-between {
+  @include flex-center-space-between;
+}

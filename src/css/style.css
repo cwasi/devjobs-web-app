@@ -57,6 +57,14 @@
   visibility: hidden;
   opacity: 0; }
 
+.d-n {
+  display: none !important; }
+
+.flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
 *,
 *::before,
 *::after {
@@ -125,6 +133,12 @@ body {
     width: 3rem;
     height: 3rem;
     background-color: transparent; }
+  .btn-filter-all {
+    padding: 0.5rem;
+    border: none;
+    color: #5f5fe7;
+    background-color: transparent;
+    cursor: pointer; }
 
 .logo-box {
   width: 7.188rem;
@@ -596,7 +610,7 @@ input[type="checkbox"] {
 
 .dark-mode {
   background-color: #121721;
-  transition: all 300ms ease-in-out; }
+  transition: all 200ms ease-in-out; }
   .dark-mode .search__form,
   .dark-mode .detail,
   .dark-mode .title,
@@ -604,7 +618,7 @@ input[type="checkbox"] {
   .dark-mode .modal__form,
   .dark-mode .job-card {
     background-color: #19202d;
-    transition: all 300ms ease-in-out; }
+    transition: all 200ms ease-in-out; }
   .dark-mode .check-box {
     background-color: rgba(255, 255, 255, 0.205); }
   .dark-mode h1,
@@ -612,16 +626,16 @@ input[type="checkbox"] {
   .dark-mode h3,
   .dark-mode h4 {
     color: #ffffff;
-    transition: all 300ms ease-in-out; }
+    transition: all 200ms ease-in-out; }
   .dark-mode p {
-    transition: all 300ms ease-in-out; }
+    transition: all 200ms ease-in-out; }
   .dark-mode label {
     color: #ffffff;
-    transition: all 300ms ease-in-out; }
+    transition: all 200ms ease-in-out; }
   .dark-mode .vertical-line {
     background-color: #6e8098;
-    transition: all 300ms ease-in-out; }
+    transition: all 200ms ease-in-out; }
   .dark-mode .modal__search__form__input,
   .dark-mode .search__form__input {
     color: #ffffff;
-    transition: all 300ms ease-in-out; }
+    transition: all 200ms ease-in-out; }
