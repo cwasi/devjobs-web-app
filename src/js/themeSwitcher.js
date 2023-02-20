@@ -1,23 +1,23 @@
 "use strict";
 
-const themeSwitcher = document.querySelector(".toggle__input");
+const themeSwitch = document.querySelector(".toggle__input");
 const body = document.querySelector("body");
 
 let getMode = localStorage.getItem("theme");
 if (getMode && getMode === "dark") {
   body.classList.add("dark-mode");
-  themeSwitcher.classList.add("active");
+  themeSwitch.checked = true;
+} else {
+  body.classList.remove("dark-mode");
+  themeSwitch.checked = false;
 }
 
-themeSwitcher.addEventListener("click", (e) => {
-  body.classList.toggle("dark-mode");
-
-  if (!body.classList.contains("dark-mode")) {
-    return localStorage.setItem("theme", "light");
+themeSwitch.addEventListener("click", (e) => {
+  if (themeSwitch.checked === true) {
+    localStorage.setItem("theme", "dark");
+    body.classList.add("dark-mode");
+  } else {
+    localStorage.setItem("theme", "light");
+    body.classList.remove("dark-mode");
   }
-  localStorage.setItem("theme", "dark");
 });
-
-themeSwitcher.addEventListener("click", () =>
-  themeSwitcher.classList.toggle("active")
-);
